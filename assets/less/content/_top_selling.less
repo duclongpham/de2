@@ -1,0 +1,85 @@
+@bg__product: #f5f5f5;
+
+.top-selling {
+    min-height: 994px;
+
+    &__title {
+        width: 100%;
+        height: 183px;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 16px;
+        &--text {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            ._transform (translateY(-50%));
+            font-size: 2.625em;
+            font-weight: 600;
+        }
+
+        &--background {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            ._transform (translateY(-50%));
+            font-size: 5.625em;
+            font-weight: 600;
+            color: #f5f5f5;
+
+            @media (max-width: 479px) {font-size: 4.625em;}
+        }
+
+        &--icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            font-size: 3em;
+            ._transform (translateY(-50%));
+            @media (max-width: 767px) {font-size: 2em;}
+        }
+        @media (max-width: 767px) {font-size: 13px;}
+        @media (max-width: 639px) {font-size: 11px;}
+    }
+
+    &__product {
+
+        .items {
+            width: 25%;
+            height: 404px;
+            padding: 0 15px;
+
+            @media (max-width: 991px) {width: 50%;}
+            @media (max-width: 639px) {width: 100%;}
+            &__img {
+                height: 264px;
+                background-color: @bg__product;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    ._transform (translate(-50%, -50%));
+                }
+            }
+
+            &__content {
+                text-align: center;
+
+                &--name {
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 16px 31px 5px 31px;
+                }
+
+                &--price {
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 1em;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}

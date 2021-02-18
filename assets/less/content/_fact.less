@@ -1,0 +1,48 @@
+.fact {
+    min-height: 163px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 0;
+    
+    &__items {
+        width: 100%/4;
+        display: flex;
+        padding: 0 15px;
+        &--text {
+            line-height: 1.5em;
+            p:first-child {
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            p:last-child {
+                font-size: 0.875em;
+                color: @gray;
+            }
+        }
+        &--icon {
+            display: flex;
+            align-items: center;
+            font-size: 2.4375em;
+            margin-right: 0.4103em;
+        }
+        
+        @media (max-width: 1024px) {
+            width: 100%/2;
+            padding: 5px 15px;
+        }
+        // @media (max-width: 640px) {
+        //     width: 100%;
+        // }
+        @media (max-width: 640px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+}
