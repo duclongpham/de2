@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+    <title>MEDYPLUS</title>
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css" />
 
     <!-- font Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- css slick -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/css/slick.css" />
     <!-- custom style -->
     <link rel="stylesheet/less" type="text/css" href="assets/less/style.less" />
     <script src="assets/lib/less/less.js">
@@ -54,7 +55,7 @@
                 </div>
 
                 <div class='header__top--right'>
-                    <image src="assets/images/Flag.png" class=''></image>
+                    <img src="assets/images/Flag.png" alt="flag" />
                     <select class="">
                         <option value="">
                             English
@@ -64,7 +65,9 @@
             </div>
         </div>
         <div class='header__mid container d-flex'>
-            <img src="assets/images/Logo.jpg" class="header__mid--logo" alt="Logo" />
+            <a href="#" class="header__mid--logo">
+                <img src="assets/images/Logo.jpg" alt="Logo" />
+            </a>
             <!-- start search header -->
             <div class="search">
                 <div class="search__dropdown">
@@ -74,18 +77,20 @@
                     </button>
                 </div>
                 <input type='text' class="search__input " placeholder="Search for Product">
-                <div class="search__icon">
+                <button class="search__icon">
                     <i class="fas fa-search text__color--white"></i>
-                </div>
+                </button>
             </div>
             <!-- end search header -->
             <div class="header__mid--icon">
-                <i class="fas fa-cog text__color--blue"></i>
+                <a href="#"><i class="fas fa-cog text__color--blue"></i></a>
             </div>
             <div class="header__mid--icon">
-                <i class="fas fa-shopping-bag text__color--blue card__badges">
-                    <span class="card__badges--dark">2</span>
-                </i>
+                <a href="#">
+                    <i class="fas fa-shopping-bag text__color--blue card__badges">
+                        <span class="card__badges--dark">2</span>
+                    </i>
+                </a>
             </div>
         </div>
         <div class='header__bottom'>
@@ -97,8 +102,10 @@
                         <span class="path3"></span>
                     </div>
                     <span class="text__color--white menu__left--text">CATEGORIES</span>
+
                 </div>
                 <div class="menu__right">
+                    <div class="menu__right--bg"></div>
                     <ul class="menu__right--ul">
                         <li class="menu__right--li"><a href="#">home</a></li>
                         <li class="menu__right--li"><a href="#">about</a></li>
@@ -108,29 +115,46 @@
                         <li class="menu__right--li"><a href="#">contact</a></li>
                     </ul>
                 </div>
-                <i class="fas fa-caret-right menu__next"></i>
             </div>
         </div>
     </div>
     <!-- end header -->
     <!-- start content -->
     <div>
-        <div class="slide">
-            <img class="slide__img" src="assets/images/banner.jpg" alt="image slide">
+        <div class="slider">
+            <div class="slider__list">
+                <div class="slider__list--item slide">
+                    <img class="slide__img" src="assets/images/banner.jpg" alt="image slide">
 
-            <div class="container slide__content">
-                <p class="slide__content--title">Find Any <span class="text__color--blue text__weight--semibold">Medicine</span></p>
-                <p class="slide__content--title">You Need!</p>
-                <p class="slide__content--info text__color--gray">Free Standard Shipping Everyday</p>
-                <button class="slide__content--btn">Shop Now</button>
+                    <div class="container slide__content">
+                        <a href="#">
+                            <p class="slide__content--title">Find Any <span class="text__color--blue text__weight--semibold">Medicine</span></p>
+                            <p class="slide__content--title">You Need!</p>
+                            <p class="slide__content--info text__color--gray">Free Standard Shipping Everyday</p>
+                        </a>
+                        <a href="#" class="slide__content--btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slider__list--item slide">
+                    <img class="slide__img" src="assets/images/banner.jpg" alt="image slide">
+
+                    <div class="container slide__content">
+                        <a href="#">
+                            <p class="slide__content--title">Find Any <span class="text__color--blue text__weight--semibold">Medicine</span></p>
+                            <p class="slide__content--title">You Need!</p>
+                            <p class="slide__content--info text__color--gray">Free Standard Shipping Everyday</p>
+                        </a>
+                        <a href="#" class="slide__content--btn">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <span class="slide__prev">
-                <i class="fas fa-chevron-left text__color--dark fa-lg"></i>
-            </span>
-            <span class="slide__next">
-                <i class="fas fa-chevron-right text__color--white fa-lg"></i>
-            </span>
 
+            <span class="slider__prev">
+                <i class="fas fa-chevron-left fa-lg"></i>
+            </span>
+            <span class="slider__next">
+                <i class="fas fa-chevron-right fa-lg"></i>
+            </span>
         </div>
         <div class="fact">
             <div class="container">
@@ -204,19 +228,22 @@
                     </div>
                     <div class="banner__right">
                         <div class="banner__right--top">
-                            <img src="assets/images/anh2.png" alt='image'>
+                            <a href="#"><img src="assets/images/anh2.png" alt='image'></a>
                             <div class="banner__right--content">
-                                <p class="text1 text__color--blue">30%</p>
-                                <p class="text2">DISCOUNT</p>
-                                <p class="text3">For Dietary Supplement
-                                    <p>
+                                <a href="#">
+                                    <p class="text1 text__color--blue">30%</p>
+                                    <p class="text2">DISCOUNT</p>
+                                    <p class="text3">For Dietary Supplement</p>
+                                </a>
                             </div>
                         </div>
                         <div class="banner__right--bottom">
-                            <img src="assets/images/anh3.png" alt='image'>
+                            <a href="#"><img src="assets/images/anh3.png" alt='image'></a>
                             <div class="banner__right--content">
-                                <p class="text4">ACCESSORIES</p>
-                                <p class="text3">Sale up to <span>20%</span> off</p>
+                                <a href="#">
+                                    <p class="text4">ACCESSORIES</p>
+                                    <p class="text3">Sale up to <span>20%</span> off</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -228,111 +255,248 @@
                 <p class='top-selling__title--background'>products</p>
                 <p class='top-selling__title--text'>top selling</p>
                 <div class="top-selling__title--icon">
-                    <i class="text__color--gray fas fa-chevron-left"></i>
-                    <i class="text__color--blue fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-left top-selling__title--prev"></i>
+                    <i class="fas fa-chevron-right top-selling__title--next"></i>
                 </div>
             </div>
             <!-- start product -->
-            <div class="row top-selling__product">
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh4.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
+            <div class="top-selling__list">
+                <div>
+                    <div class="row top-selling__product">
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh4.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh14.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--gray text__decoration--through">$35.00</span>
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh13.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Natural Factors Vitamin C Blueberry Rasp
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh12.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Jarrow Formulas Methylcobalamin
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh11.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh10.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh9.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Natural Factors Vitamin C Blueberry Rasp
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh8.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Jarrow Formulas Methylcobalamin
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh14.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
-                        <p class="items__content--price">
-                            <span class="text__color--gray text__decoration--through">$35.00</span>
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
+                <div>
+                    <div class="row top-selling__product">
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh4.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh14.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--gray text__decoration--through">$35.00</span>
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh13.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Natural Factors Vitamin C Blueberry Rasp
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh12.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Jarrow Formulas Methylcobalamin
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh11.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh10.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh9.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Natural Factors Vitamin C Blueberry Rasp
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="items__img">
+                                <a href="#"><img src="assets/images/anh8.png" alt="product"></a>
+                            </div>
+                            <div class="items__content">
+                                <a href="#">
+                                    <p class="items__content--name">
+                                        Jarrow Formulas Methylcobalamin
+                                    </p>
+                                    <p class="items__content--price">
+                                        <span class="text__color--blue">$30.00</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh13.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">
-                            Natural Factors Vitamin C Blueberry Rasp
-                        </p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh12.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">
-                            Jarrow Formulas Methylcobalamin
-                        </p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh11.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">Nature's Bounty Biotin 10000 MCG</p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh10.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">Best Colon Detox Formula Advanced Colon</p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh9.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">
-                            Natural Factors Vitamin C Blueberry Rasp
-                        </p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="items__img">
-                        <img src="assets/images/anh8.png" alt="product">
-                    </div>
-                    <div class="items__content">
-                        <p class="items__content--name">
-                            Jarrow Formulas Methylcobalamin
-                        </p>
-                        <p class="items__content--price">
-                            <span class="text__color--blue">$30.00</span>
-                        </p>
-                    </div>
-                </div>
-
             </div>
+
             <!-- end product -->
         </div>
         <div class="news">
@@ -347,19 +511,26 @@
                 <!-- start items -->
                 <div class="row list-items">
                     <div class="list-items__item">
-                        <img src="assets/images/anh7.jpg" alt="image" />
-                        <p class='list-items__item--name'>Probiotics may help battle antibiotic resistance Probiotics may help</p>
-                        <p class='list-items__item--info'>14 June 2018 by <span class="text__color--blue">Admin</span></p>
+                        <a href="#">
+                            <img src="assets/images/anh7.jpg" alt="image" />
+                            <p class='list-items__item--name'>Probiotics may help battle antibiotic resistance Probiotics may help</p>
+                        </a>
+                        <p class='list-items__item--info'>14 June 2018 by <a href="#" class="text__color--blue">Admin</a></p>
                     </div>
                     <div class="list-items__item">
-                        <img src="assets/images/anh6.jpg" alt="image" />
-                        <p class='list-items__item--name'>Study overturns what we know about kidney stones</p>
-                        <p class='list-items__item--info'>14 June 2018 by <span class="text__color--blue">Admin</span></p>
+                        <a href="#">
+                            <img src="assets/images/anh6.jpg" alt="image" />
+                            <p class='list-items__item--name'>Study overturns what we know about kidney stones</p>
+                        </a>
+                        <p class='list-items__item--info'>14 June 2018 by <a href="#" class="text__color--blue">Admin</a></p>
                     </div>
                     <div class="list-items__item">
-                        <img src="assets/images/anh5.jpg" alt="image" />
-                        <p class='list-items__item--name'>Hair loss: Scientists test wearable re-growth device</p>
-                        <p class='list-items__item--info'>14 June 2018 by <span class="text__color--blue">Admin</span></p>
+                        <a href="#">
+                            <img src="assets/images/anh5.jpg" alt="image" />
+                            <p class='list-items__item--name'>Hair loss: Scientists test wearable re-growth device</p>
+                        </a>
+                        <p class='list-items__item--info'>14 June 2018 by <a href="#" class="text__color--blue">Admin</a></p>
+
                     </div>
                 </div>
                 <!-- end items -->
@@ -377,19 +548,29 @@
         </div>
         <div class="brands container">
             <div class="brands__items">
-                <image class="" src="assets/images/logo_footer.png" alt="logo footer"></image>
+                <a href="#">
+                    <img class="" src="assets/images/logo_footer.png" alt="logo footer" />
+                </a>
             </div>
             <div class="brands__items">
-                <image class="" src="assets/images/logo_footer1.png" alt="logo footer"></image>
+                <a href="#">
+                    <img class="" src="assets/images/logo_footer1.png" alt="logo footer" />
+                </a>
             </div>
             <div class="brands__items">
-                <image class="" src="assets/images/logo_footer2.png" alt="logo footer"></image>
+                <a href="#">
+                    <img class="" src="assets/images/logo_footer2.png" alt="logo footer" />
+                </a>
             </div>
             <div class="brands__items">
-                <image class="" src="assets/images/logo_footer3.png" alt="logo footer"></image>
+                <a href="#">
+                    <img class="" src="assets/images/logo_footer3.png" alt="logo footer" />
+                </a>
             </div>
             <div class="brands__items">
-                <image class="" src="assets/images/logo_footer4.png" alt="logo footer"></image>
+                <a href="#">
+                    <img class="" src="assets/images/logo_footer4.png" alt="logo footer" />
+                </a>
             </div>
         </div>
     </div>
@@ -403,54 +584,62 @@
                     <h5 class="footer-menu__items--title">CONTACT US</h5>
                     <p class="nav__p">
                         <i class="fas fa-map-marker-alt fa-sm text__color--blue nav__p--icon"></i>
-                        <a class="text__color--gray" href="#">
+                        <a href="#" class="text__color--gray">
                         Lorem Ipsum has been the indus-try's standard
                     </a>
                     </p>
                     <p class="nav__p">
                         <i class="far fa-envelope fa-sm text__color--blue nav__p--icon"></i>
-                        <a class="text__color--gray" href="#">
+                        <a href="#" class="text__color--gray">
                          contact@medic.com
                     </a>
                     </p>
                     <p class="nav__p">
                         <i class="fas fa-mobile-alt fa-sm text__color--blue nav__p--icon"></i>
-                        <a class="text__color--gray" href="#">
+                        <a href="#" class="text__color--gray">
                          +84 (1) 234 567 891
                     </a>
                     </p>
                     <p class='nav__p--last'>
-                        <i class="fab fa-facebook-f fa-sm text__color--gray nav__p--icon"></i>
-                        <i class="fab fa-twitter fa-sm text__color--blue nav__p--icon"></i>
-                        <i class="fab fa-google-plus-g fa-sm text__color--gray nav__p--icon"></i>
-                        <i class="fab fa-instagram fa-sm text__color--gray nav__p--icon"></i>
+                        <a href="#">
+                            <i class="fab fa-facebook-f fa-sm nav__p--icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter fa-sm nav__p--icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g fa-sm nav__p--icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram fa-sm nav__p--icon"></i>
+                        </a>
                     </p>
                 </div>
                 <div class="footer-menu__items">
                     <h5 class="footer-menu__items--title">COMPANY</h5>
                     <ul class="footer-menu__items--ul nav">
                         <li class="nav__list">
-                            <a class="text__color--gray" href="#">
+                            <a href="#">
                             About Us
                         </a>
                         </li>
                         <li class="nav__list">
-                            <a class="text__color--gray" href="#">
+                            <a href="#">
                             Team Member
                         </a>
                         </li>
                         <li class="nav__list">
-                            <a class="text__color--gray" href="#">
+                            <a href="#">
                             Career
                         </a>
                         </li>
                         <li class="nav__list">
-                            <a class="text__color--gray" href="#">
+                            <a href="#">
                             Contact
                         </a>
                         </li>
                         <li class="nav__list">
-                            <a class="text__color--gray" href="#">
+                            <a href="#">
                             Affiliate
                         </a>
                         </li>
@@ -515,28 +704,22 @@
             </div>
         </div>
         <div class="footer-copyright container">
-            <div class="text__color--gray">@2018 Design by <span class="text__color--blue">Creative Wp.</span> All Rights Reserved</div>
+            <div class="text__color--gray">@2018 Design by <a href="#" class="text__color--blue">Creative Wp.</a> All Rights Reserved</div>
             <div class="footer-copyright__logo">
-                <img src="assets/images/cirrus_logo.png" alt="logo"></img>
-                <img src="assets/images/mastercard_logo.png" alt="logo"></img>
-                <img src="assets/images/visa_logo.png" alt="logo"></img>
-                <img src="assets/images/skrill_logo.png" alt="logo"></img>
-                <img src="assets/images/paypal_logo.png" alt="logo"></img>
+                <a href="#"><img src="assets/images/cirrus_logo.png" alt="logo" /></a>
+                <a href="#"><img src="assets/images/mastercard_logo.png" alt="logo" /></a>
+                <a href="#"><img src="assets/images/visa_logo.png" alt="logo" /></a>
+                <a href="#"><img src="assets/images/skrill_logo.png" alt="logo" /></a>
+                <a href="#"><img src="assets/images/paypal_logo.png" alt="logo" /></a>
             </div>
         </div>
     </div>
     <!-- end footer -->
     <!-- jquery -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('body').find('*').each(function() {
-                // $(this).css({
-                //     "outline": "0.5px solid red"
-                // })
-            })
-        })
-    </script>
+    <!-- js slick -->
+    <script src="assets/lib/slick/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

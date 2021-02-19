@@ -1,13 +1,13 @@
 .fact {
     min-height: 163px;
-    display: flex;
-    align-items: center;
+    ._flex;
+    ._align-items (center); 
     font-size: 16px;
     padding: 20px 0;
     
     &__items {
         width: 100%/4;
-        display: flex;
+        ._flex;
         padding: 0 15px;
         &--text {
             line-height: 1.5em;
@@ -22,8 +22,8 @@
             }
         }
         &--icon {
-            display: flex;
-            align-items: center;
+            ._flex;
+            ._align-items (center); 
             font-size: 2.4375em;
             margin-right: 0.4103em;
         }
@@ -36,8 +36,8 @@
         //     width: 100%;
         // }
         @media (max-width: 640px) {
-            flex-direction: column;
-            align-items: center;
+           ._flex-dir__column;
+            ._align-items (center); 
             text-align: center;
         }
     }
