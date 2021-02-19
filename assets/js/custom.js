@@ -8,7 +8,7 @@ $(document).ready(function() {
         prevArrow: $('.top-selling__title--prev'),
     });
 
-    $('.menu__left--icon').on('click', function() {
+    $('.menu__right--icon').on('click', function() {
         $('.menu__right').css({ display: 'block' });
 
     })
