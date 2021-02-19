@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.slider__list').slick({
         nextArrow: $('.slider__next'),
-        prevArrow: $('.slider__prev')
+        prevArrow: $('.slider__prev'),
+        autoplay: true,
+        autoplaySpeed: 3000
     });
     $('.top-selling__list').slick({
         nextArrow: $('.top-selling__title--next'),
